@@ -1,0 +1,33 @@
+{
+  "name": "netology-homework",
+  "version": "1.0.0",
+  "description": "Netology homework",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/src/js/reader.js",
+      "/src/js/parser.js"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^8.0.6",
+    "@babel/preset-env": "^8.0.6",
+    "@eslint/js": "^10.0.1",
+    "babel-jest": "^30.5.2",
+    "babel-loader": "^10.1.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "jest": "^30.5.2",
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3"
+  }
+}
